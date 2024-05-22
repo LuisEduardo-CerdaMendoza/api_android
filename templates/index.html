@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversos Modelos de IA</title>
+    <style>
+        body {
+            background-image: url('https://c.wallhere.com/photos/7e/31/brain_digital_art_Vertigo3d_artificial_intelligence_technology_futuristic_lines-2213087.jpg!d');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .container1 {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1f99b8;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000000;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #020077;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #00fff2;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br/>
+        <br/>
+        <br/>
+        <div class="container1"><h1>Escoga una opcion</h1></div>
+        <div class="buttons">
+            <form action="/codigo_resultados" method="POST">
+                <button type="submit" name="codigo" value="14" class="btn">MODELO DE SELECCION</button>
+            </form>
+            <br/>
+            <form action="/codigo_resultados" method="POST">
+                <button type="submit" name="codigo" value="15" class="btn">MODELO DE EXTRACCION DE CARACTERISTICAS</button>
+            </form>
+            <br/>
+            <form action="/codigo_resultados" method="POST">
+                <button type="submit" name="codigo" value="16" class="btn">MODELO DE SELECCION DE MODELO</button>  <!-- Modificado -->
+            </form>
+            <br/>
+        </div>
+    </div>
+</body>
+</html>
